@@ -1,4 +1,4 @@
-contract Actor {}
+contract Entity {}
 contract AttributeList {
     // an Attribute is a single key->value pair, optionally with an address->value mapping
     struct Attribute {
@@ -150,9 +150,9 @@ contract VotingGroup is AddressGroup {
         }
     }
 }
-contract Identity is Actor, AttributeList, VotingGroup {
-    // actor
-    // TODO: tailor actor methods
+contract Identity is Entity, AttributeList, VotingGroup {
+    // entity
+    // TODO: tailor entity method
     // attribute list access
     function setAttribute(bytes32 key, bytes32 value, bool linkable) needsVote(2,3,10) {
         super.setAttribute(key, value, linkable);

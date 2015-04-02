@@ -1,6 +1,6 @@
-contract Identity is Actor, AttributeList, VotingGroup {
-    // actor
-    // TODO: tailor actor methods
+contract Identity is Entity, AttributeList, VotingGroup {
+    // entity
+    // TODO: tailor entity method
     // attribute list access
     function setAttribute(bytes32 key, bytes32 value, bool linkable) needsVote(2,3,10) {
         super.setAttribute(key, value, linkable);
