@@ -1,0 +1,8 @@
+#!/bin/bash
+
+touch id_combined.sol
+echo "contract Actor {}" > id_combined.sol
+cat attributelist.sol >> id_combined.sol
+cat addressgroup.sol >> id_combined.sol
+cat votinggroup.sol >> id_combined.sol
+cat identity.sol >> id_combined.sol
