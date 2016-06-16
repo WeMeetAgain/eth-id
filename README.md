@@ -37,3 +37,5 @@ An identity is composed of three main components:
 - `memberTotal` - returns the total number of addresses in the group.
 - `onlyMember` - a modifier which lets a function only be run by a member of this group.
 
+# License
+MIT
